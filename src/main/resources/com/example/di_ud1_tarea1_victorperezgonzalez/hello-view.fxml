@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="396.0" minWidth="616.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="396.0" minWidth="616.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.di_ud1_tarea1_victorperezgonzalez.HelloController">
    <children>
       <GridPane minHeight="-Infinity" prefHeight="396.0" prefWidth="616.0">
         <columnConstraints>
@@ -28,7 +28,7 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <TextField prefHeight="25.0" prefWidth="199.0">
+                  <TextField fx:id="user" prefHeight="25.0" prefWidth="199.0">
                      <HBox.margin>
                         <Insets bottom="25.0" />
                      </HBox.margin></TextField>
@@ -38,7 +38,7 @@
                </GridPane.margin></HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
-                  <PasswordField prefHeight="25.0" prefWidth="199.0">
+                  <PasswordField fx:id="passwrd" prefHeight="25.0" prefWidth="199.0">
                      <HBox.margin>
                         <Insets bottom="25.0" />
                      </HBox.margin></PasswordField>
@@ -48,7 +48,7 @@
                </GridPane.margin></HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
-                  <Button alignment="TOP_RIGHT" mnemonicParsing="false" text="Sign In" />
+                   <Button alignment="TOP_RIGHT" mnemonicParsing="false"  text="Sign In" onAction="#signinButtonClick"></Button>
                </children></HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
@@ -71,6 +71,11 @@
                 <GridPane.margin>
                     <Insets bottom="30.0" top="30.0" />
                 </GridPane.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Label fx:id="warningText"/>
+               </children>
             </HBox>
          </children>
       </GridPane>

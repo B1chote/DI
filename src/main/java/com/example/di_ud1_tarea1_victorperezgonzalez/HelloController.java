@@ -2,13 +2,24 @@ package com.example.di_ud1_tarea1_victorperezgonzalez;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private Label warningText;
+    @FXML
+    private TextField user;
+    @FXML
+    private PasswordField passwrd;
+
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void signinButtonClick() {
+        if (user.getText().isEmpty() || passwrd.getText().isEmpty()){
+            warningText.setText("complete all fields");
+        }
+        else {
+            warningText.setText("user unknown");}
     }
 }

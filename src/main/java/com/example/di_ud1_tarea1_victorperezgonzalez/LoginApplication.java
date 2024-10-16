@@ -13,8 +13,8 @@ public class LoginApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 616, 396);
         stage.setTitle("Log In");
         stage.setScene(scene);
-        stage.setMinHeight(350);
         stage.setMinWidth(500);
+        stage.setMinHeight(350);
         stage.show();
     }
 

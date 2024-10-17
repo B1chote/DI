@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -32,7 +33,7 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <TextField fx:id="user" prefHeight="25.0" prefWidth="199.0">
+                  <TextField id="customTextField" fx:id="user" prefHeight="25.0" prefWidth="199.0">
                      <HBox.margin>
                         <Insets bottom="25.0" />
                      </HBox.margin></TextField>
@@ -40,19 +41,22 @@
                <GridPane.margin>
                   <Insets top="30.0" />
                </GridPane.margin></HBox>
-            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
-                  <PasswordField fx:id="passwrd" prefHeight="25.0" prefWidth="199.0">
+                  <PasswordField id="customPasswordField" fx:id="passwrd" prefHeight="25.0" prefWidth="199.0">
                      <HBox.margin>
                         <Insets bottom="25.0" />
                      </HBox.margin></PasswordField>
                </children>
                <GridPane.margin>
                   <Insets top="30.0" />
-               </GridPane.margin></HBox>
-            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               </GridPane.margin></VBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="8.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
-                   <Button id="ButtonEspecial" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#signinButtonClick" text="Sign In" />
+                   <Button id="ButtonEspecial" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#signinButtonClick" text="Sign In">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></Button>
                </children></HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
@@ -67,7 +71,7 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Label text="Password :">
+                  <Label id="LabelNormal" text="Password :">
                      <padding>
                         <Insets right="5.0" top="3.0" />
                      </padding></Label>
@@ -76,11 +80,11 @@
                     <Insets bottom="30.0" top="30.0" />
                 </GridPane.margin>
             </HBox>
-            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="135.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <children>
-                  <Label fx:id="warningText" />
+                  <Label id="warningText" fx:id="warningText" />
                </children>
-            </HBox>
+            </VBox>
          </children>
       </GridPane>
    </children>

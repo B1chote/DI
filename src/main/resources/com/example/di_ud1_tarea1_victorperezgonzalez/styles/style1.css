@@ -1,8 +1,5 @@
-/*Fondo
-• Etiquetas
-• Entradas de texto y contraseña
-• Botón
-• Etiqueta*/
+/*Entradas de texto y contraseña*/
+
 #HBox1{
 -fx-background-color:#949494;
 }
@@ -21,7 +18,14 @@ GridPane{
 -fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 1), 10, 0.8, 0, 0);
 }
 #LabelNormal{
+-fx-font-size: 16px;
 -fx-font-weight: bold;
 -fx-text-fill: black;
 -fx-effect: dropshadow(gaussian, white, 1, 1, 0, 0);
+}
+#warningText{
+-fx-font-size: 13px;
+-fx-font-weight: bold;
+-fx-text-fill: black;
+-fx-effect: dropshadow(gaussian, red, 0.8, 0.8 , 0, 0);
 }

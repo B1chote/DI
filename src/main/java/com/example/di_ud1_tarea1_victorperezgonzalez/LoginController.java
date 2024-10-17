@@ -16,9 +16,9 @@ public class LoginController {
     @FXML
     protected void signinButtonClick() {
         if (user.getText().isEmpty() || passwrd.getText().isEmpty()){
-            warningText.setText("complete all fields");
+            warningText.setText("Complete All Fields");
         }
         else {
-            warningText.setText("user unknown");}
+            warningText.setText("User Unknown");}
     }
 }

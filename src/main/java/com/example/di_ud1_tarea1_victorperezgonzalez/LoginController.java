@@ -9,13 +9,13 @@ public class LoginController {
     @FXML
     private Label warningText;
     @FXML
-    private TextField user;
+    private TextField userField;
     @FXML
-    private PasswordField passwrd;
+    private PasswordField passwrdField;
 
     @FXML
     protected void signinButtonClick() {
-        if (user.getText().isEmpty() || passwrd.getText().isEmpty()){
+        if (userField.getText().isEmpty() || passwrdField.getText().isEmpty()){
             warningText.setText("Complete All Fields");
         }
         else {

@@ -26,6 +26,21 @@ GridPane{
 #warningText{
 -fx-font-size: 13px;
 -fx-font-weight: bold;
--fx-text-fill: black;
--fx-effect: dropshadow(gaussian, red, 0.8, 0.8 , 0, 0);
+-fx-text-fill: red;
+-fx-effect: dropshadow(gaussian, black, 10, 0.5, 0, 0);
+
+}
+.text-field{
+-fx-background-color:#d6d6d6;
+}
+
+.text-field:hover{
+-fx-background-color:#ffffff;
+-fx-border-color: #007bff;
+-fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 0.8), 10, 0.5, 0, 0);
+}
+
+.button:hover{
+-fx-background-color:#ffffff;
+-fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 0.8), 10, 0.5, 0, 0);
 }

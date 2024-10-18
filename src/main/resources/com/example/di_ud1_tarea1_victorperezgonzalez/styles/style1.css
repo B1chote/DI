@@ -1,28 +1,32 @@
-/*Entradas de texto y contraseña*/
 
 #HBox1{
 -fx-background-color:#949494;
 }
+
 GridPane{
 -fx-background-color:#949494;
 }
+
 #ButtonEspecial{
 -fx-text-fill: black;
 -fx-font-weight: bold;
 -fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 0.8), 10, 0.5, 0, 0);
 }
+
 #LabelBrillo{
 -fx-font-size: 30px;
 -fx-font-weight: bold;
 -fx-text-fill: black;
 -fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 1), 10, 0.8, 0, 0);
 }
+
 #LabelNormal{
 -fx-font-size: 16px;
 -fx-font-weight: bold;
 -fx-text-fill: black;
 -fx-effect: dropshadow(gaussian, white, 1, 1, 0, 0);
 }
+
 #warningText{
 -fx-font-size: 13px;
 -fx-font-weight: bold;

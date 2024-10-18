@@ -33,7 +33,7 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <TextField id="customTextField" fx:id="user" prefHeight="25.0" prefWidth="199.0">
+                  <TextField fx:id="userField" prefHeight="25.0" prefWidth="199.0">
                      <HBox.margin>
                         <Insets bottom="25.0" />
                      </HBox.margin></TextField>
@@ -41,16 +41,16 @@
                <GridPane.margin>
                   <Insets top="30.0" />
                </GridPane.margin></HBox>
-            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
-                  <PasswordField id="customPasswordField" fx:id="passwrd" prefHeight="25.0" prefWidth="199.0">
+                  <PasswordField fx:id="passwrdField" prefHeight="25.0" prefWidth="199.0">
                      <HBox.margin>
                         <Insets bottom="25.0" />
                      </HBox.margin></PasswordField>
                </children>
                <GridPane.margin>
                   <Insets top="30.0" />
-               </GridPane.margin></VBox>
+               </GridPane.margin></HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="8.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
                    <Button id="ButtonEspecial" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#signinButtonClick" text="Sign In">
